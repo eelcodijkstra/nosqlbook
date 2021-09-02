@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structuur: JSON-schema &#8212; NoSQL boek</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Linked data: JSON-LD" href="structuur-1.html" />
+    <link rel="prev" title="MongoDB initialisatie" href="mongodb-init.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">NoSQL boek</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welkom bij het NoSQL boek
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Data en structuur
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="data-0.html">
+   Data en informatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data-1.html">
+   Gestructureerde gegevens
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  NoSQL en MongoDB
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nosql-0.html">
+   Waarom NoSQL?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nosql-1.html">
+   Hoe NoSQL?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mongodb-0.html">
+   MongoDB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mongodb-1.html">
+   MongoDB: zoekopdrachten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mongodb-init.html">
+   MongoDB initialisatie
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Structuur en Linked data
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Structuur: JSON-schema
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structuur-1.html">
+   Linked data: JSON-LD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  jbook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/structuur-0.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstructuur-0.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/structuur-0.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inleiding">
+   Inleiding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#json-schema-en-mongodb">
+   JSON-schema en MongoDB
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbeeld-product-met-specialisaties">
+   Voorbeeld: product met specialisaties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wat-kun-je-nog-meer-met-json-schema">
+   Wat kun je nog meer met JSON-schema?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#genereren-van-web-formulieren">
+     Genereren van web-formulieren
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#documenteren-en-gebruiken-van-api-s">
+     Documenteren en gebruiken van API’s
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opdrachten">
+   Opdrachten
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#toetsvragen">
+     Toetsvragen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gevorderde-onderwerpen">
+   Gevorderde onderwerpen
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="structuur-json-schema">
+<h1>Structuur: JSON-schema<a class="headerlink" href="#structuur-json-schema" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>MongoDB/document-database: elk document (in een collection) bepaalt zijn eigen structuur</p></li>
+<li><p>voor zoeken in een collection: (deels) gemeenschappelijke structuur van documenten nodig</p></li>
+<li><p>met JSON-schema kun je de <em>structuur van een document beschrijven</em>; je kunt daarmee controleren of een bepaald document aan dit schema voldoet; je documenteert daarmee ook de collection</p></li>
+<li><p>we noemen een document dat aan een JSON-schema voldoet ook wel een <em>instantie</em> (instance) van dat schema</p></li>
+<li><p>je kunt een JSON-schema ook zien als meta-data: het is data die de structuur van andere data (documenten) beschrijft.</p></li>
+<li><p>in MongoDB kun je een JSON-schema koppelen aan een collection, om af te dwingen dat alle documenten in die collection aan dat schema voldoen.</p></li>
+<li><p>JSON-schema dit is niet alleen zinvol voor (document) databases, maar bijvoorbeeld ook voor:</p>
+<ul>
+<li><p>API’s die JSON-documenten als invoer verwachten, of als resultaat opleveren;</p></li>
+<li><p>UI voor formulierinvoer van documenten</p></li>
+<li><p>(andere contexten waar JSON documenten gebruikt worden?)</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="inleiding">
+<h2>Inleiding<a class="headerlink" href="#inleiding" title="Permalink to this headline">¶</a></h2>
+<p>Zoals je eerder gezien hebt, bepaalt elk (JSON-)document in een MongoDB collection zijn eigen structuur: de namen en types van de velden.
+Voor een zoekopdracht in een collection, bijvoorbeeld naar documenten met <code class="docutils literal notranslate"><span class="pre">plaats</span> <span class="pre">=</span> <span class="pre">&quot;Amsterdam&quot;</span></code>, is het wel zo handig als alle documenten een veld <code class="docutils literal notranslate"><span class="pre">plaats</span></code> hebben, met een string als waarde. Een document met <code class="docutils literal notranslate"><span class="pre">{...&quot;city&quot;:</span> <span class="pre">&quot;Amsterdam&quot;...}</span></code> komt immers niet in het zoekresultaat voor.</p>
+<p>Met een <em>JSON-schema</em> (<a class="reference external" href="https://json-schema.org">https://json-schema.org</a>) kun je controleren (valideren) of een JSON-document (ten minste) bepaalde velden heeft, met de juiste namen en types.
+Door een JSON-schema te koppelen aan een MongoDB <em>collection</em> kun je afdwingen dat alleen documenten die aan het schema voldoen aan die collection toegevoegd worden.</p>
+<div class="admonition-opmerking admonition">
+<p class="admonition-title">Opmerking</p>
+<p>Je kunt een JSON-schema vergelijken met een <em>type</em> of een <em>class</em> voor JSON-documenten.
+Een JSON-document (instantie) is dan een waarde van dat type, of object van die class.</p>
+</div>
+<p>We geven eerst een elementair JSON-schema voorbeeld. Voor veel programmeertalen zijn er libraries om te werken met JSON-schema. We gebruiken hier de Python-library <code class="docutils literal notranslate"><span class="pre">jsonschema</span></code>, zie <a class="reference external" href="https://python-jsonschema.readthedocs.io">https://python-jsonschema.readthedocs.io</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">jsonschema</span> <span class="kn">import</span> <span class="n">validate</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dit eerste voorbeeld geeft een schema met twee velden, <code class="docutils literal notranslate"><span class="pre">naam</span></code> en <code class="docutils literal notranslate"><span class="pre">leeftijd</span></code>. Voor elk veld kun je het type aangeven. Met behulp van <code class="docutils literal notranslate"><span class="pre">required</span></code> geef je aan welke velden <em>verplicht</em> zijn.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;naam&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">},</span>
+        <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;naam&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Met <code class="docutils literal notranslate"><span class="pre">validate</span></code> kun je controleren of een JSON-object voldoet aan dit schema.
+(Alleen als dat niet het geval is krijg je een foutmelding (exception); anders niets.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">object1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;naam&quot;</span><span class="p">:</span> <span class="s2">&quot;Hans&quot;</span><span class="p">,</span> <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="mi">33</span><span class="p">}</span>
+<span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">object1</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In het volgende voorbeeld klopt de waarde van het veld <code class="docutils literal notranslate"><span class="pre">leeftijd</span></code> niet met het type zoals gegeven in het schema. Dit resulteert in een foutmelding.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">object2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;naam&quot;</span><span class="p">:</span> <span class="s2">&quot;Kees&quot;</span><span class="p">,</span> <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="s2">&quot;dertig&quot;</span><span class="p">}</span>
+<span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">object2</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValidationError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">af16bdf128b7</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">object2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;naam&quot;</span><span class="p">:</span> <span class="s2">&quot;Kees&quot;</span><span class="p">,</span> <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="s2">&quot;dertig&quot;</span><span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">object2</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jupyterbook/lib/python3.9/site-packages/jsonschema/validators.py</span> in <span class="ni">validate</span><span class="nt">(instance, schema, cls, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">932</span>     <span class="n">error</span> <span class="o">=</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">best_match</span><span class="p">(</span><span class="n">validator</span><span class="o">.</span><span class="n">iter_errors</span><span class="p">(</span><span class="n">instance</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">933</span>     <span class="k">if</span> <span class="n">error</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">934</span>         <span class="k">raise</span> <span class="n">error</span>
+<span class="g g-Whitespace">    </span><span class="mi">935</span> 
+<span class="g g-Whitespace">    </span><span class="mi">936</span> 
+
+<span class="ne">ValidationError</span>: &#39;dertig&#39; is not of type &#39;integer&#39;
+
+<span class="n">Failed</span> <span class="n">validating</span> <span class="s1">&#39;type&#39;</span> <span class="ow">in</span> <span class="n">schema</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;leeftijd&#39;</span><span class="p">]:</span>
+    <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;integer&#39;</span><span class="p">}</span>
+
+<span class="n">On</span> <span class="n">instance</span><span class="p">[</span><span class="s1">&#39;leeftijd&#39;</span><span class="p">]:</span>
+    <span class="s1">&#39;dertig&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bij de volgende instantie ontbreekt het verplichte veld “naam”, waarschijnlijk door de verwarring met “voornaam”:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">object3</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voornaam&quot;</span><span class="p">:</span> <span class="s2">&quot;Marie&quot;</span><span class="p">,</span> <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="mi">21</span><span class="p">}</span>
+<span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">object3</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValidationError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="mi">51</span><span class="n">fbd9e17b49</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">object3</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voornaam&quot;</span><span class="p">:</span> <span class="s2">&quot;Marie&quot;</span><span class="p">,</span> <span class="s2">&quot;leeftijd&quot;</span><span class="p">:</span> <span class="mi">21</span><span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">validate</span><span class="p">(</span><span class="n">instance</span><span class="o">=</span><span class="n">object3</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jupyterbook/lib/python3.9/site-packages/jsonschema/validators.py</span> in <span class="ni">validate</span><span class="nt">(instance, schema, cls, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">932</span>     <span class="n">error</span> <span class="o">=</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">best_match</span><span class="p">(</span><span class="n">validator</span><span class="o">.</span><span class="n">iter_errors</span><span class="p">(</span><span class="n">instance</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">933</span>     <span class="k">if</span> <span class="n">error</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">934</span>         <span class="k">raise</span> <span class="n">error</span>
+<span class="g g-Whitespace">    </span><span class="mi">935</span> 
+<span class="g g-Whitespace">    </span><span class="mi">936</span> 
+
+<span class="ne">ValidationError</span>: &#39;naam&#39; is a required property
+
+<span class="n">Failed</span> <span class="n">validating</span> <span class="s1">&#39;required&#39;</span> <span class="ow">in</span> <span class="n">schema</span><span class="p">:</span>
+    <span class="p">{</span><span class="s1">&#39;properties&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;leeftijd&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;integer&#39;</span><span class="p">},</span>
+                    <span class="s1">&#39;naam&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="p">}},</span>
+     <span class="s1">&#39;required&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;naam&#39;</span><span class="p">],</span>
+     <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;object&#39;</span><span class="p">}</span>
+
+<span class="n">On</span> <span class="n">instance</span><span class="p">:</span>
+    <span class="p">{</span><span class="s1">&#39;leeftijd&#39;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;voornaam&#39;</span><span class="p">:</span> <span class="s1">&#39;Marie&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Voorbeelden:</p>
+<ul class="simple">
+<li><p>beschrijving van de structuur van een Person (contact)</p></li>
+<li><p>beschrijving van de structuur van een Event</p></li>
+<li><p>beschrijving van de structuur van een Product (generalisatie/specialisatie)</p></li>
+</ul>
+<p>Het voorbeeld hierboven is een eenvoudig begin. In JSON-schema kun je aangeven:</p>
+<ul class="simple">
+<li><p>wat de structuur is: <code class="docutils literal notranslate"><span class="pre">object</span></code>, <code class="docutils literal notranslate"><span class="pre">array</span></code>, of een enkelvoudig type;</p></li>
+<li><p>welke velden een object kan hebben; of moet hebben (<code class="docutils literal notranslate"><span class="pre">required</span></code>);</p></li>
+<li><p>welk type elk veld moet hebben; of elk item van een <code class="docutils literal notranslate"><span class="pre">array</span></code>;</p></li>
+<li><p>welke alternatieven er zijn (<code class="docutils literal notranslate"><span class="pre">oneOf</span></code>, <code class="docutils literal notranslate"><span class="pre">anyOf</span></code>);</p></li>
+<li><p>aan welke eisen de waarden moeten voldoen, bijvoorbeeld de minimum- en maximumwaarden;</p></li>
+<li><p>…</p></li>
+</ul>
+<p>In het volgende hoofdstuk geven we een aantal voorbeeld waarin meer van de mogelijkheden gebruikt worden.</p>
+</div>
+<div class="section" id="json-schema-en-mongodb">
+<h2>JSON-schema en MongoDB<a class="headerlink" href="#json-schema-en-mongodb" title="Permalink to this headline">¶</a></h2>
+<p>Zoals gezegd moet je ervoor kunnen zorgen dat de documenten in een MongoDB collection eenzelfde gemeenschappelijke (deel)structuur hebben, om zoekopdrachten op een zinvolle manier te kunnen gebruiken.
+In principe kun je met <code class="docutils literal notranslate"><span class="pre">jsonchema.validate</span></code> er al voor zorgen dat een document dat je toevoegt aan het gemeenschappelijke schema voldoet. Maar MongoDB maakt het nog wat gemakkelijker: je kunt een JSON-schema koppelen aan een collection. MongoDB zorgt er dan voor dat er alleen documenten toegevoegd kunnen worden die aan dat schema voldoen.</p>
+<p>Voorbeelden:</p>
+<ul class="simple">
+<li><p>zoeken in documenten waarbij sommige documenten een andere structuur hebben, bijvoorbeeld gebruik van andere namen (tikfout en/of andere taal)</p>
+<ul>
+<li><p>(dit moet in de voorbeeld-invoer voorbereid worden)</p></li>
+<li><p>bij voorkeur in het vorige hoofdstuk</p></li>
+</ul>
+</li>
+<li><p>beschrijven van een JSON-documentstructuur, en het controleren van enkele voorbeelden (bijv. de personen uit het database-voorbeeld?</p></li>
+<li><p>MongoDB: koppelen van JSON-schema aan een collection;</p>
+<ul>
+<li><p>toevoegen van een document dat aan het schema voldoet</p></li>
+<li><p>toevoegen van een document dat niet aan het schema voldoet</p></li>
+</ul>
+</li>
+</ul>
+<p>Volgende stap: gebruik van standaard-namen voor entiteiten/documenten, attributen/properties. Bijvoorbeeld: via <a class="reference external" href="http://schema.org">schema.org</a></p>
+<p>Dit is ook een opstap naar Linked Data. <a class="reference external" href="http://Schema.org">Schema.org</a> is gebaseerd op de Linked Data principes.</p>
+</div>
+<div class="section" id="voorbeeld-product-met-specialisaties">
+<h2>Voorbeeld: product met specialisaties<a class="headerlink" href="#voorbeeld-product-met-specialisaties" title="Permalink to this headline">¶</a></h2>
+<p>In één van de vorige hoofdstukken heb je gezien dat we verschillende varianten (specialisaties) van product-documenten in eenzelfde collection onderbrachten.
+Je kunt in die collection dan op verschillende manieren zoeken: (i) op de algemene eigenschappen van een product; (ii) op de eigenschappen van een bepaalde specialisatie.</p>
+<blockquote>
+<div><p>De structuur van Product met specialisaties heet wel generalisatie-specialisatie: “Product” is de generalisatie, “Boek” en “Cd” zijn voorbeelden van specialisaties. In object-georiënteerde programmeertalen heet dit ook wel “overerving” of “inheritance”: de specialisaties Boek en Cd erven de algemene eigenschappen (velden) van de generalisatie Product.</p>
+</div></blockquote>
+<p>In JSON-schema kun je deze structuur als volgt weergeven:</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Gen/Spec in SQL</p>
+<p>In SQL tabellen kun je de generalisatie/specialisatie-structuur weergeven door een verwijzing van het specialisatie-deel naar het generalisatie-deel. Voor de generalisatie en voor de verschillende specialisaties gebruik je aparte tabellen.</p>
+</div>
+<p><strong>Vraag</strong>: het is duidelijk wat met <code class="docutils literal notranslate"><span class="pre">required</span></code> bedoeld wordt. De niet-required velden zijn optioneel. Zijn er buiten die velden nog andere velden mogelijk? Hoe geef je dat aan?</p>
+</div>
+<div class="section" id="wat-kun-je-nog-meer-met-json-schema">
+<h2>Wat kun je nog meer met JSON-schema?<a class="headerlink" href="#wat-kun-je-nog-meer-met-json-schema" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="genereren-van-web-formulieren">
+<h3>Genereren van web-formulieren<a class="headerlink" href="#genereren-van-web-formulieren" title="Permalink to this headline">¶</a></h3>
+<p>Een formulier is een voorbeeld van gestructureerde data.
+Je kunt de structuur van een formulier beschrijven met JSON-schema.
+Met behulp van een generator-programma kun je dan de code genereren voor het bijbehorende web-formulier.
+Er zijn generatoren voor allerlei web-frameworks, zoals React.</p>
+<p>Zie bijvoorbeeld: <a class="reference external" href="https://rjsf-team.github.io/react-jsonschema-form/">https://rjsf-team.github.io/react-jsonschema-form/</a>. Die website bevat ook allerlei voorbeelden van schema’s en de bijbehorende formulieren.</p>
+</div>
+<div class="section" id="documenteren-en-gebruiken-van-api-s">
+<h3>Documenteren en gebruiken van API’s<a class="headerlink" href="#documenteren-en-gebruiken-van-api-s" title="Permalink to this headline">¶</a></h3>
+<p>JSON wordt vaak gebruikt in web-APIs, zowel voor de invoer-data van een web-request als voor de resulterende uitvoer.
+Je kunt het formaat van de invoer- en uitvoer-documenten beschrijven met JSON-schema.
+Dit is niet alleen zinvol als documentatie, maar je kunt ook de code voor het testen en verwerken uit de JSON laten genereren.</p>
+<p>Voor een volledige beschrijving van een web-API moet je ook de paden (bijvoorbeeld “/products”) en HTTP methods (“GET”, “PUT”, enz.) beschrijven. Hiervoor kun je OpenAPI gebruiken (<a class="reference external" href="https://swagger.io/specification/">https://swagger.io/specification/</a>). Het deel van de OpenAPO specificatie dat betrekking heeft op de data die uitgewisseld wordt, is gebaseerd op JSON-schema. Met de Swagger hulpmiddelen kun je OpenAPI interfaces documenteren en testen.</p>
+<p>Zie bijvoorbeeld:</p>
+<ul class="simple">
+<li></li>
+<li><p><a class="reference external" href="https://json.schemastore.org/openweather.current.json">https://json.schemastore.org/openweather.current.json</a> (JSON-schema voor openweather API)
+** <a class="reference external" href="https://openweathermap.org/current#current_JSON">https://openweathermap.org/current#current_JSON</a></p></li>
+<li><p><a class="reference external" href="https://swagger.io">https://swagger.io</a>
+** <a class="reference external" href="https://swagger.io/tools/swagger-editor/">https://swagger.io/tools/swagger-editor/</a></p></li>
+</ul>
+<p>Voor API’s is er de OpenAPI notatie, die bijvoorbeeld gebruikt wordt door Swagger (<a class="reference external" href="http://swagger.io">swagger.io</a>). Daarmee kun je API’s documenteren en controleren. Er zijn aparte programma’s om JSON-schema om te zetten naar OpenAPI notatie.</p>
+</div>
+</div>
+<div class="section" id="opdrachten">
+<h2>Opdrachten<a class="headerlink" href="#opdrachten" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>gegeven een JSON-Schema, breid dit uit met een veld; en maak twee voorbeelden, één van een document dat hieraan voldoet en één van een document dat (net niet) voldoet - bijvoorbeeld doordat de waarde niet van het juiste type is.</p></li>
+<li><p>gegeven een JSON-Schema, pas de documenten aan zodat deze aan het schema voldoen.</p></li>
+<li><p>MongoDB: koppel een JSON-Schema aan een collection, en controleer of de documenten aan dat schema voldoen. Zorg ervoor dat de documenten aan het schema voldoen.</p></li>
+<li><p>genereren van een formulier (HTML? Angular etc.?) vanuit JSON-Schema</p></li>
+<li><p>maak een formulier (met het React-tool) voor het onderstaande JSON-Schema</p>
+<ul>
+<li><p>uitproberen van verschillende mogelijkheden</p></li>
+<li><p>ook voor valideren van input!</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="toetsvragen">
+<h3>Toetsvragen<a class="headerlink" href="#toetsvragen" title="Permalink to this headline">¶</a></h3>
+<p>Met JSON schema</p>
+<ul class="simple">
+<li><p>kun je de structuur van een verzameling JSON-documenten (instanties) beschrijven</p></li>
+<li><p>kun je de structuur van een JSON-document valideren</p></li>
+<li><p>kun je de structuur van een JSON-document veranderen</p></li>
+<li><p>kun je de waarden in een JSON-document veranderen</p></li>
+</ul>
+<p>Door een JSON schema aan een MongoDB collection te koppelen</p>
+<ul class="simple">
+<li><p>dwing je af dat de documenten in die collection precies dezelfde structuur hebben</p></li>
+<li><p>dwing je af dat de documenten in die collection een gemeenschappelijke deel-structuur hebben</p></li>
+<li><p>zorg je ervoor dat een aantal queries over die collection goed gedefinieerd zijn</p></li>
+<li><p>documenteer je de collection - door aan te geven welke documenten deze kan bevatten</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="gevorderde-onderwerpen">
+<h2>Gevorderde onderwerpen<a class="headerlink" href="#gevorderde-onderwerpen" title="Permalink to this headline">¶</a></h2>
+<p>Deze onderwerpen behandelen we in de keuzemodule.</p>
+<ul class="simple">
+<li><p>nesting van schema’s</p></li>
+<li><p>gebruik van arrays, lijsten</p></li>
+<li><p>gebruik van alternatieven (-&gt; support voor Product, Gen/Spec?)</p></li>
+<li><p>gebruik van JSON-schema voor API’a</p></li>
+<li><p>gebruik van JSON-schema voor web-formulieren</p></li>
+</ul>
+<p>Verder lezen:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://json-schema.org/understanding-json-schema/">https://json-schema.org/understanding-json-schema/</a></p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="mongodb-init.html" title="previous page">MongoDB initialisatie</a>
+    <a class='right-next' id="next-link" href="structuur-1.html" title="next page">Linked data: JSON-LD</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eelco Dijkstra<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
