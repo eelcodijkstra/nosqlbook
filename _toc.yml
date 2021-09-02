@@ -1,0 +1,31 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+- caption: Data en structuur
+  chapters:
+  - file: data-0
+  - file: data-1
+   -file: data-2
+
+- caption: NoSQL en MongoDB
+  chapters:
+  - file: nosql-0
+  - file: nosql-1
+  - file: mongodb-0
+  - file: mongodb-1
+  - file: mongodb-init
+
+- caption: Structuur en Linked data
+  chapters:
+  - file: structuur-0
+  - file: structuur-1
+  
+- caption: jbook
+  chapters:
+  - file: markdown
+  - file: notebooks
+
