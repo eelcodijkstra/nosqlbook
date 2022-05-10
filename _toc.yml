@@ -6,12 +6,15 @@ root: intro
 
 parts:
 - caption: Data en structuur
+  numbered: True
   chapters:
   - file: data-0
   - file: data-1
-   -file: data-2
+  - file: data-2
+  - file: data-3
 
 - caption: NoSQL en MongoDB
+  numbered: True
   chapters:
   - file: nosql-0
   - file: nosql-1
@@ -20,6 +23,7 @@ parts:
   - file: mongodb-init
 
 - caption: Structuur en Linked data
+  numbered: True
   chapters:
   - file: structuur-0
   - file: structuur-1
@@ -28,4 +32,8 @@ parts:
   chapters:
   - file: markdown
   - file: notebooks
+  
+- caption: appendices
+  chapters:
+  - file: glossary
 
