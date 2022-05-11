@@ -28,11 +28,6 @@ parts:
   - file: structuur-0
   - file: structuur-1
   
-- caption: jbook
-  chapters:
-  - file: markdown
-  - file: notebooks
-  
 - caption: appendices
   chapters:
   - file: glossary
